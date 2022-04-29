@@ -18,7 +18,7 @@ int main()
         subdivide(ruler, min, max, i); // 每次都是从i = 1从头递归下去，而不是继续上一次
         std::cout << ruler << std::endl; // 输出横着看 不是竖着看
         for (int j = 1; j < Len - 2; j++)
-            ruler[j] = ' '; // 复原
+            ruler[j] = ' '; // 复原，虽然由于循环中的函数调用方式看起来不影响结果
     }
     return 0;
 }
