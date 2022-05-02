@@ -8,7 +8,8 @@ int main()
     double c = 13.0;
 
     a = square(5.0);
-    b = square(4.5 + 7.5);
+    b = square(4.5 + 7.5); /* if defined by macro definition, then 
+    b = 4.5 + 7.5 * 4.5 + 7.5, more brackets should be added */
     cout << "a = " << a << ", b = " << b << "\n";
     cout << "c = " << c;
     cout << ", c squared = " << square(c++) << "\n";
