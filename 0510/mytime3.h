@@ -18,7 +18,7 @@ public:
     Time operator-(const Time & t) const;
     Time operator*(double n) const;
     friend Time operator*(double m, const Time & t)
-        {return t * m; } // inline definition
+        { return t * m; } // inline definition
     friend std::ostream & opeator << (std::ostream & os, const Time & t);
 };
 
